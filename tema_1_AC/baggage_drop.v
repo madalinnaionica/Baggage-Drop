@@ -38,9 +38,9 @@ module baggage_drop( //seven_seg1, seven_seg2, seven_seg3, seven_seg4, drop_acti
 	 sensors_input SI(
 		.sensor1(sensor1),
 		.sensor2(sensor2),	
-	   .sensor3(sensor3),
+	        .sensor3(sensor3),
 		.sensor4(sensor4),
-	   .height(SI_to_SR)
+	        .height(SI_to_SR)
 		);
 		
 	square_root SR(
