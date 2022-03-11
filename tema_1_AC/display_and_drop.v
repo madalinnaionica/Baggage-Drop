@@ -33,7 +33,7 @@ module display_and_drop(
 	 drop_activated= (t_act <= t_lim && !drop_en) ? 0 : ( (t_act <= t_lim && drop_en) ?  1 : (t_act > t_lim && drop_en) ? 0 : 0);
 	 seven_seg1 = (t_act <= t_lim && !drop_en) ? 7'b011_1001 : ( (t_act <= t_lim && drop_en == 1) ?  7'b101_1110 : (t_act > t_lim && drop_en) ? 7'b000_0000 : 0);
 	 seven_seg2 = (t_act <= t_lim && !drop_en) ? 7'b101_1100 : ( (t_act <= t_lim && drop_en == 1) ?  7'b101_0000 : (t_act > t_lim && drop_en) ? 7'b111_0110 : 0);
-    seven_seg3 = (t_act <= t_lim && !drop_en) ? 7'b011_1000 : ( (t_act <= t_lim && drop_en == 1) ?  7'b101_1100 : (t_act > t_lim && drop_en) ? 7'b101_1100 : 0);			
+         seven_seg3 = (t_act <= t_lim && !drop_en) ? 7'b011_1000 : ( (t_act <= t_lim && drop_en == 1) ?  7'b101_1100 : (t_act > t_lim && drop_en) ? 7'b101_1100 : 0);			
 	 seven_seg4 = (t_act <= t_lim && !drop_en) ? 7'b101_1110 : ( (t_act <= t_lim && drop_en == 1) ?  7'b111_0011 : (t_act > t_lim && drop_en) ? 7'b111_1000 : 0);				
     
 	 end
