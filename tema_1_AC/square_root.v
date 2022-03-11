@@ -41,7 +41,7 @@ module square_root(
         end
 		  // calculated_out = (out_prod > calculated_input ) ? (calculated_out - base_number) : 0;
          base_number= base_number >> 1 ;      // shift 1 digit to the right = divide by 
-    end
+         end
 	 end
 
 assign out=calculated_out;
